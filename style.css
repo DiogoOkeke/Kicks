@@ -1,0 +1,416 @@
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+    transition: all .5s ease;
+}
+
+a::selection,
+p::selection,
+s::selection,
+button::selection{
+ color: hsl(24, 100%, 45%);
+}
+
+/*Nav*/
+
+.flex-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.flex-two,
+.cart-div{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.menu-icon{
+ margin-right: .8rem;
+}
+
+.cart-div{
+ position: relative;
+}
+
+.item-numbers{
+ position: absolute;
+ top: -.6rem;
+ right: -.6rem;
+ background-color: hsl(26, 100%, 55%);
+ color: white;
+ border-radius: 50%;
+ width: 4.5vw;
+ height: 4.5vw;
+ line-height: 1.7;
+ text-align: center;
+ font-size: .6rem;
+ font-weight: bold;
+ display: none;
+}
+
+.avatar-image{
+ width: 10vw;
+ margin-left: 1.2rem;
+}
+
+.avatar-image:hover{
+ border: 1.3px solid hsl(26, 100%, 55%);
+ border-radius: 50%;
+}
+
+.nav-content{
+ z-index: 100;
+ height: 97.33vh;
+ width: 64vw;
+ padding: 1.5rem 0 0 1.5rem;
+ text-align: left;
+ background-color: #fff;
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ position: absolute;
+ top: 0;
+ animation: slide 1.2s linear 0s;
+ animation-fill-mode: forwards;
+ display: none;
+}
+
+@keyframes slide{
+ from{
+  left: -20rem;
+ }
+ 
+ to{
+  left: 0rem;
+ }
+}
+
+.close-icon{
+ width: 5vw;
+ position: relative;
+ top: -15rem;
+}
+
+.nav-links{
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ top: -12.3rem;
+}
+
+.nav-content a{
+ text-decoration: none;
+ color: hsl(220, 13%, 13%);
+ font-weight: bold;
+ font-size: 1.1rem;
+}
+
+.nav-content a:hover{
+ color: hsl(26, 100%, 55%);
+}
+
+.nav-links a:nth-child(2),
+.nav-links a:nth-child(4){
+ margin-block: 1.35rem;
+}
+
+
+/* Cart Empty */
+
+.cart-empty{
+ width: 95vw;
+ height: 36vh;
+ margin-top: 1rem;
+ margin-left: .5rem;
+ background-color: #fff;
+ border-radius: .8rem;
+ position: absolute;
+ display: none;
+ z-index: 100;
+}
+
+.cart-empty p:first-child,
+.cart{
+ padding: .6rem 1.8rem .6rem 1rem;
+ font-size: 1.08rem;
+ font-weight: bold;
+ color: hsl(219, 13%, 13%);
+}
+
+.cart-empty p:last-child{
+ padding: 3.5rem 2.5rem 3rem 2.5rem;
+ font-weight: bold;
+ font-size: 1rem;
+ letter-spacing: .05rem;
+ text-align: center;
+ color: hsl(219, 9%, 45%);
+}
+
+/* Cart full */
+
+.cart-full{
+ width: 95vw;
+ margin-top: 1rem;
+ margin-left: .6rem;
+ background-color: #fff;
+ border-radius: .8rem;
+ box-shadow: 2px 8px 5px hsl(229, 8%, 60%);
+ position: absolute;
+ display: none;
+ z-index: 100;
+}
+
+.cart-content,
+.cart-content-two,
+.cart-content-three,
+.cart-content-four{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 2rem 0 1rem 0;
+}
+
+.cart-content-two,
+.cart-content-three,
+.cart-content-four{
+ display: none;
+}
+
+.cart-content img:first-child,
+.cart-content-two img:first-child,
+.cart-content-three img:first-child,
+.cart-content-four img:first-child{
+ width: 14vw;
+ object-fit: contain;
+ margin-left: 1rem;
+ margin-right: 1rem;
+}
+
+.delete-icon{
+ width: 4vw;
+ margin-left: auto;
+ margin-right: 1rem;
+}
+
+.sneaker-info{
+ color: hsl(219, 9%, 45%);
+ margin: 0;
+ margin-bottom: .4rem;
+}
+
+.price{
+ color: hsl(219, 9%, 45%);
+ margin: 0;
+}
+
+.total-price{
+ color: hsl(220, 13%, 13%);
+ font-weight: bold;
+}
+
+.cart-full button:last-child{
+ width: 85vw;
+ background-color: hsl(26, 100%, 55%);
+ color: white;
+ font-weight: bold;
+ font-size: .96rem; 
+ padding-block: 1.1rem;
+ margin-left: 1.1rem;
+ margin-top: 1rem;
+ margin-bottom: 1.5rem;
+ border: 0;
+ outline: none;
+ border-radius: 8px;
+ font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+}
+
+.cart-full button:last-child:hover{
+ transform: scale(.9);
+}
+
+
+/* Section One */
+
+.arrow-icon{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.prev-white-bg,
+.next-white-bg{
+ position: absolute;
+ z-index: 100;
+ top: 13rem;
+ background-color: white;
+ width: 11vw;
+ height: 11vw;
+ border-radius: 50%;
+ line-height: 2.5;
+ pointer-events: auto;
+}
+
+.prev-white-bg{
+ margin-left: 1.2rem;
+}
+
+.next-white-bg{
+ margin-left: 18.76rem;
+}
+
+.prev-white-bg:hover,
+.next-white-bg:hover{
+ transform: scale(.8);
+}
+
+.prev-white-bg img{
+ width: 2vw;
+ position: relative;
+ left: .8rem;
+}
+
+.next-white-bg img{
+ width: 2vw;
+ position: relative;
+ left: 1rem;
+}
+
+.first-display{
+ position: relative;
+}
+
+.sneakers-carousel{
+ position: relative;
+ overflow: hidden;
+}
+
+.slides{
+ display: flex;
+}
+
+.product-two,
+.product-three,
+.product-four{
+ display: none;
+}
+
+.sneakers-carousel img{
+ width: 100vw;
+ height: 40vh;
+ object-fit: cover;
+ z-index: -100;
+ position: relative;
+}
+
+
+/* Section Two */
+
+.section-two{
+ padding: .5rem 1.3rem 1.5rem 1.3rem;
+}
+
+.sneaker-company{
+ font-size: .8rem;
+ font-weight: bold;
+ letter-spacing: .13rem;
+ color: hsl(26, 100%, 55%);
+}
+
+.info-text{
+ margin: 0;
+ font-weight: bold;
+ font-size: 1.8rem;
+ color: hsl(220, 13%, 13%);
+}
+
+.intro-text{
+ font-size: .95rem;
+ line-height: 1.5rem;
+ color: hsl(219, 9%, 45%);
+}
+
+.price-tag-div{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: -1.6rem;
+}
+
+.main-price{
+ font-size: 1.8rem;
+ font-weight: bold;
+ color: hsl(220, 13%, 13%);
+}
+
+.percentage{
+ background-color: hsl(25, 100%, 94%);
+ border-radius: 5px;
+ color: hsl(26, 100%, 55%);
+ padding: .2rem .6rem;
+ font-size: 1.1rem;
+ font-weight: bold;
+ margin-left: .8rem;
+}
+
+.former-price{
+ color: hsl(220, 14%, 75%);
+ font-weight: bold;
+ font-size: 1.2rem;
+ margin-left: auto;
+}
+
+.decrement-increment-div{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: hsl(223, 64%, 98%);
+ border-radius: 8px;
+ padding: .8rem 1.4rem;
+}
+
+.decrement,
+.increment{
+ font-weight: bold;
+ font-size: 1.6rem;
+ color: orange;
+ margin: 0;
+}
+
+.figure{
+ color: hsl(220, 13%, 13%);
+ font-weight: bold;
+ font-size: 1.2rem;
+ margin: 0;
+}
+
+.section-two button{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ outline: none;
+ border: none;
+ margin: 0 auto;
+ margin-top: 1rem;
+ margin-bottom: 1.8rem;
+ background-color: hsl(26, 100%, 55%);
+ color: white;
+ width: 88vw;
+ padding-block: 1rem;
+ border-radius: 8px;
+ font-weight: bold;
+ font-size: .96rem;
+ font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+}
+
+.section-two button:hover{
+ transform: scale(.9);
+}
+
+.section-two button .button-cart{
+ margin-right: .8rem;
+}
