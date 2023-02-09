@@ -509,28 +509,28 @@ function carousel() {
   productOne.style.display = 'none';
   productTwo.style.display = 'flex';
   }
- }, 1000)
+ }, 1500)
  
  setTimeout(() => {
   if (slide.value = 2) {
   productTwo.style.display = 'none';
   productThree.style.display = 'flex';
   }
- }, 1500)
+ }, 2000)
  
   setTimeout(() => {
   if (slide.value = 3) {
   productThree.style.display = 'none';
   productFour.style.display = 'flex';
   }
- }, 2000)
+ }, 2500)
  
  setTimeout(() => {
   if (slide.value = 3) {
   productFour.style.display = 'none';
   productOne.style.display = 'flex';
   }
- }, 2500)
+ }, 3000)
  
 }
 
