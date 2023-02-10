@@ -163,6 +163,7 @@ button::selection{
  position: absolute;
  display: none;
  z-index: 100;
+ font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 .cart-content,
@@ -404,7 +405,7 @@ button::selection{
  border-radius: 8px;
  font-weight: bold;
  font-size: .96rem;
- font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+ font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 .section-two button:hover{
