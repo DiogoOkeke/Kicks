@@ -231,7 +231,7 @@ button {
  border: 0;
  outline: none;
  border-radius: 8px;
- font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+ font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 .cart-full button:last-child:hover{
