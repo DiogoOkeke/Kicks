@@ -12,6 +12,10 @@ button::selection{
  color: hsl(24, 100%, 45%);
 }
 
+button {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
 /*Nav*/
 
 .flex-nav{
