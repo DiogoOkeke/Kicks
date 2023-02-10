@@ -509,32 +509,32 @@ function carousel() {
   productOne.style.display = 'none';
   productTwo.style.display = 'flex';
   }
- }, 1500)
+ }, 2000)
  
  setTimeout(() => {
   if (slide.value = 2) {
   productTwo.style.display = 'none';
   productThree.style.display = 'flex';
   }
- }, 2000)
+ }, 3000)
  
   setTimeout(() => {
   if (slide.value = 3) {
   productThree.style.display = 'none';
   productFour.style.display = 'flex';
   }
- }, 2500)
+ }, 4000)
  
  setTimeout(() => {
   if (slide.value = 3) {
   productFour.style.display = 'none';
   productOne.style.display = 'flex';
   }
- }, 3000)
+ }, 5000)
  
 }
 
 
-setInterval(carousel, 2500);
+setInterval(carousel, 4000);
 
 window.onload = () => carousel();
